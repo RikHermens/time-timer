@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Timer!</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="assetts/Denisa.PNG" alt="Juf Denisa" class="denisa">
+    </div>
+    <div class="animatie">
+        <img src="assetts/charlie1.png" alt="Charlie" id="charles1">
+        <img src="assetts/charlie2.png" alt="Charlie2" id="charles2" class="hidecharlie">
+        <img src="assetts/charlie3.png" alt="Charlie3" id="charles3" class="hidecharlie">
+        <img src="assetts/charlie4.png" alt="Charlie4" id="charles4" class="hidecharlie">
+    </div>
+    <div class="lijn"></div>
+    <div class="timer-sectie">
+        <p class="uren label">UREN</p>
+        <p class="minuten label">MINUTEN</p>
+        <p class="seconde label">SECONDEN</p>
+        <input id="hour" type="number" max="99" min="0" value="0" class="time">
+        <p id="p1" class="semicolon">:</p>
+        <input id="minute" type="number" max="60" min="0" value="0" class="time">
+        <p id="p2" class="semicolon">:</p>
+        <input id="second" type="number" max="60" min="0" value="0" class="time">
+    </div>
+    <div class="knoppen">
+        <button class="start"> Start</button>
+        <button class="reset"> Reset</button>
+    </div>
+    <audio class="bark" src="assetts/bark.wav"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
