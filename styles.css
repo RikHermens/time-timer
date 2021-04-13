@@ -8,7 +8,6 @@ body {
 .denisa {
     position: absolute;
     left: 5%;
-
 }
 .animatie {
     height: 45vh;
@@ -88,17 +87,25 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media screen and (max-width: 1000px) {
     body {
-        font-size: 1.5em
+        font-size: 1em
     }
     .knoppen button {
         font-size: 0.6em;
     }
     .time {
-        font-size: 20px;
+        font-size: 10px;
+    }
+
+    .semicolon {
+        font-size: 10px;
     }
     .animatie img {
         width: 90%;
         height: 50%;
+    }
+    .denisa {
+        height: 50px;
+        margin-top: -30px;
     }
     
 }
