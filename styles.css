@@ -87,7 +87,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media screen and (max-width: 1000px) {
     body {
-        font-size: 1em
+        font-size: 0.6em
     }
     .knoppen button {
         font-size: 0.6em;
@@ -103,9 +103,19 @@ input[type=number]::-webkit-outer-spin-button {
         width: 90%;
         height: 50%;
     }
+    .animatie {
+        margin-bottom: 70px;
+    }
     .denisa {
         height: 50px;
-        margin-top: -30px;
+        margin-top: -50px;
     }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button {  
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+
+}
     
 }
