@@ -53,7 +53,7 @@ function stopTimer() {
 
 start.addEventListener("click", function () {
     //init var startTimer, iedere 1000ms, 1s roept hij timer functie
-    if (startTimer == true) {
+    if (startTimer != null || (h.value == 0 && m.value == 0 && s.value == 0)) {
         return
     }
     function startInterval() {
@@ -62,6 +62,7 @@ start.addEventListener("click", function () {
         }, 1000)
     }
     startInterval();
+    console.log(startTimer);
 
 })
 
