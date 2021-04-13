@@ -21,7 +21,7 @@ function timer() {
         m.value = 0;
         s.value = 0;
         bark.play();
-        charlieOne.classList.add("hidecharlie");
+        charlieOne.classList.add("hidecharlie"); //zorgt ervoor dat afb 1, dan 2, dan 3, dan 4 getoont wordt.
         charlieTwo.classList.remove("hidecharlie");
         setTimeout(function () {
             charlieTwo.classList.add("hidecharlie");
@@ -48,17 +48,24 @@ function timer() {
 
 function stopTimer() {
     clearInterval(startTimer);
+    startTimer = null;
 }
 
 start.addEventListener("click", function () {
     //init var startTimer, iedere 1000ms, 1s roept hij timer functie
+    if (startTimer == true) {
+        return
+    }
     function startInterval() {
         startTimer = setInterval(function () {
             timer();
         }, 1000)
     }
     startInterval();
+
 })
+
+
 
 reset.addEventListener("click", function () {
     h.value = 0; //value linkt aan html inputfield
